@@ -1,0 +1,77 @@
+.atomicmenu {
+    position: relative;
+}
+.atomicmenu-active {
+    display: inline-block;
+}
+.atomicmenu-inactive {
+    display: none;
+}
+.atomicmenu-open {
+    display: block;
+}
+.atomicmenu-toggle {
+    padding: 0 0 0 1.8rem;
+    margin: 0;
+    background: none;
+    border: 0;
+    position: relative;
+    cursor: pointer;
+}
+.atomicmenu-toggle:before,
+.atomicmenu-toggle:after {
+    content: ' ';
+    width: 1.4rem;
+    height: 0.3rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.atomicmenu-toggle:after {
+    top: auto;
+    bottom: 0.1rem;
+}
+.atomicmenu-toggleopen.atomicmenu-toggle:before {
+    transform: rotate(-45deg);
+    top: 0.45rem;
+}
+.atomicmenu-toggleopen.atomicmenu-toggle:after {
+    transform: rotate(45deg);
+    bottom: 0.4rem;
+}
+.atomicmenu-container.atomicmenu-open {
+    position: absolute;
+    width: 100vw;
+    right: 0;
+    top: 100%;
+    padding: 1rem 1rem 2rem;
+    margin-top: 1rem;
+    opacity: 0.9;
+}
+.atomicmenu-container.atomicmenu-open .atomicmenu-option {
+    display: block;
+    text-align: center;
+}
+
+.atomicmenu-darktheme .atomicmenu-toggle {
+    color: #fff;
+}
+.atomicmenu-darktheme .atomicmenu-toggle:before,
+.atomicmenu-darktheme .atomicmenu-toggle:after {
+    background: #fff;
+}
+.atomicmenu-darktheme .atomicmenu-container.atomicmenu-open {
+    background: #141418;
+}
+
+.atomicmenu-lighttheme .atomicmenu-toggle {
+    color: #000;
+}
+.atomicmenu-lighttheme .atomicmenu-toggle:before,
+.atomicmenu-lighttheme .atomicmenu-toggle:after {
+    background: #000;
+}
+.atomicmenu-lighttheme .atomicmenu-container.atomicmenu-open {
+    background: #fff;
+}
