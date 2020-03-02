@@ -15,7 +15,7 @@ To use, your HTML needs to look something like this:
             <a class="atomicmenu-option" href="/" >Careers</a> 
             <a class="atomicmenu-option" href="/" >Sign Up</a> 
         </div>
-        <button class="atomicmenu-toggle v-mid tr pa3">Menu</button>
+        <button class="atomicmenu-toggle">Menu</button>
     </nav>
 
 * `.atomicmenu` needs to be applied to the outer container,
